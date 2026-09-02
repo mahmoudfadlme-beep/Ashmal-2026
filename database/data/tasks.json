@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": "task_msu406nf03g706",
+      "title": "فتح حساب بنك",
+      "description": "EMP674 ALI MUHAMMAD MERAJ\nبعد استلام البطاقة المدنية / العامل عنده دمج رقم مدني وتعديل صورة شخصية",
+      "assigneeId": "emp_mssvo1rp8pzlfj",
+      "priority": "medium",
+      "status": "receiving",
+      "startDate": "",
+      "dueDate": "",
+      "completedDate": null,
+      "stageDates": {
+        "receiving": "2026-08-25",
+        "preparation": "2026-08-22",
+        "response": "2026-08-17"
+      },
+      "kpis": [],
+      "comments": [],
+      "createdAt": 1786782227883,
+      "categoryId": "cat_mt10bf48ag85bm",
+      "categoryCustom": "",
+      "isPending": true,
+      "pendingSince": "2026-08-25",
+      "pendingReason": ""
+    }
+  ]
+}

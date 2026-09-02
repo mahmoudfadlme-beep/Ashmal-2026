@@ -1,0 +1,67 @@
+{
+  "categories": [
+    {
+      "id": "cat_mt10bf48ag85bm",
+      "name_ar": "معاملة بنكية",
+      "name_en": "Bank Transaction",
+      "color": "#4CAF50",
+      "icon": "🏦"
+    },
+    {
+      "id": "cat_mt10fd91m5vx53",
+      "name_ar": "معاملة اون لاين- البطاقة المدنية",
+      "name_en": "Online - Civil ID",
+      "color": "#2196F3",
+      "icon": "🆔"
+    },
+    {
+      "id": "cat_mt11saxysnb188",
+      "name_ar": "هيئة المعلومات المدنية",
+      "name_en": "Civil Information Authority",
+      "color": "#FF9800",
+      "icon": "📋"
+    },
+    {
+      "id": "cat_mt11xzgcbnd782",
+      "name_ar": "شئون الاقامة",
+      "name_en": "Residence Affairs",
+      "color": "#9C27B0",
+      "icon": "🏠"
+    },
+    {
+      "id": "cat_mt12bp4yok0er3",
+      "name_ar": "متابعة معاملات مرور",
+      "name_en": "Traffic Transactions",
+      "color": "#F44336",
+      "icon": "🚗"
+    },
+    {
+      "id": "cat_mt4mtjd4dot5c3",
+      "name_ar": "اسهل",
+      "name_en": "Ashal/Online",
+      "color": "#00BCD4",
+      "icon": "💼"
+    },
+    {
+      "id": "cat_mt138gul8hfuf3",
+      "name_ar": "وزارة التجارة والصناعة",
+      "name_en": "Ministry of Commerce",
+      "color": "#FFC107",
+      "icon": "🏭"
+    },
+    {
+      "id": "cat_fin",
+      "name_ar": "مالية ومحاسبة",
+      "name_en": "Finance & Accounting",
+      "color": "#8BC34A",
+      "icon": "💰"
+    },
+    {
+      "id": "cat_hr",
+      "name_ar": "موارد بشرية",
+      "name_en": "Human Resources",
+      "color": "#E91E63",
+      "icon": "👥"
+    }
+  ]
+}

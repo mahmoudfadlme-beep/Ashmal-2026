@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tasks Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "معرّف فريد للمهمة",
+      "pattern": "^task_[a-z0-9]+$"
+    },
+    "title": {
+      "type": "string",
+      "description": "عنوان المهمة",
+      "minLength": 3,
+      "maxLength": 255
+    },
+    "description": {
+      "type": "string",
+      "description": "وصف تفصيلي للمهمة"
+    },
+    "assigneeId": {
+      "type": "string",
+      "description": "معرّف الموظف المكلف بالمهمة",
+      "pattern": "^emp_[a-z0-9]+$"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["urgent", "high", "medium", "low"],
+      "description": "أولوية المهمة"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["receiving", "preparation", "submission", "response", "followup", "completed"],
+      "description": "حالة المهمة الحالية"
+    },
+    "categoryId": {
+      "type": "string",
+      "description": "معرّف فئة المهمة",
+      "pattern": "^cat_[a-z0-9]+$"
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date",
+      "description": "تاريخ بدء المهمة"
+    },
+    "dueDate": {
+      "type": "string",
+      "format": "date",
+      "description": "تاريخ الاستحقاق"
+    },
+    "completedDate": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "تاريخ انتهاء المهمة"
+    },
+    "stageDates": {
+      "type": "object",
+      "description": "تواريخ المراحل المختلفة",
+      "properties": {
+        "receiving": { "type": "string", "format": "date" },
+        "preparation": { "type": "string", "format": "date" },
+        "submission": { "type": "string", "format": "date" },
+        "response": { "type": "string", "format": "date" },
+        "followup": { "type": "string", "format": "date" },
+        "completed": { "type": "string", "format": "date" }
+      }
+    },
+    "isPending": {
+      "type": "boolean",
+      "description": "هل المهمة معلقة"
+    },
+    "pendingSince": {
+      "type": "string",
+      "format": "date",
+      "description": "تاريخ تعليق المهمة"
+    },
+    "pendingReason": {
+      "type": "string",
+      "description": "سبب تعليق المهمة"
+    },
+    "kpis": {
+      "type": "array",
+      "description": "قائمة مؤشرات الأداء",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "employeeId": { "type": "string" },
+          "defId": { "type": "string" },
+          "score": { "type": "integer", "minimum": 1, "maximum": 10 },
+          "date": { "type": "string", "format": "date" }
+        }
+      }
+    },
+    "comments": {
+      "type": "array",
+      "description": "التعليقات على المهمة",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "author": { "type": "string" },
+          "text": { "type": "string" },
+          "time": { "type": "integer" }
+        }
+      }
+    },
+    "createdAt": {
+      "type": "integer",
+      "description": "وقت إنشاء المهمة (timestamp)"
+    }
+  },
+  "required": ["id", "title", "assigneeId", "priority", "status", "createdAt"]
+}

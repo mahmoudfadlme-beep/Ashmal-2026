@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Employees Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "معرّف فريد للموظف",
+      "pattern": "^emp_[a-z0-9]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "اسم الموظف",
+      "minLength": 2,
+      "maxLength": 100
+    },
+    "role": {
+      "type": "string",
+      "description": "الوظيفة",
+      "enum": ["HPR", "PRO", "HR", "Admin", "Manager", "Supervisor"]
+    },
+    "dept": {
+      "type": "string",
+      "description": "القسم/الإدارة"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "البريد الإلكتروني"
+    },
+    "phone": {
+      "type": "string",
+      "description": "رقم الهاتف"
+    },
+    "avatar": {
+      "type": "string",
+      "description": "رابط الصورة الشخصية"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date",
+      "description": "تاريخ الانضمام"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "inactive", "on_leave"],
+      "description": "حالة الموظف"
+    }
+  },
+  "required": ["id", "name", "role", "email", "createdAt"]
+}

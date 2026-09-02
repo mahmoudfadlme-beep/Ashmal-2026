@@ -1,0 +1,54 @@
+{
+  "employees": [
+    {
+      "id": "emp_mssvo1ro8rqkz6",
+      "name": "Mahmoud",
+      "role": "HPR",
+      "dept": "PR Dept",
+      "email": "mahmoud@company.com",
+      "phone": "+965-XXXXXXXX",
+      "createdAt": "2026-08-14",
+      "status": "active"
+    },
+    {
+      "id": "emp_mssvo1ro67f3m2",
+      "name": "Ahmed",
+      "role": "PRO",
+      "dept": "PR Dept",
+      "email": "ahmed@company.com",
+      "phone": "+965-XXXXXXXX",
+      "createdAt": "2026-08-14",
+      "status": "active"
+    },
+    {
+      "id": "emp_mssvo1ro70gzmx",
+      "name": "Salem",
+      "role": "Admin",
+      "dept": "PR Dept",
+      "email": "salem@company.com",
+      "phone": "+965-XXXXXXXX",
+      "createdAt": "2026-08-14",
+      "status": "active"
+    },
+    {
+      "id": "emp_mssvo1rp8pzlfj",
+      "name": "Abdelbaky",
+      "role": "PRO",
+      "dept": "Dept",
+      "email": "abdelbaky@company.com",
+      "phone": "+965-XXXXXXXX",
+      "createdAt": "2026-08-14",
+      "status": "active"
+    },
+    {
+      "id": "emp_mszr28td462zx2",
+      "name": "HR Team",
+      "role": "HR",
+      "dept": "HR",
+      "email": "hr@company.com",
+      "phone": "+965-XXXXXXXX",
+      "createdAt": "2026-08-19",
+      "status": "active"
+    }
+  ]
+}
