@@ -1,0 +1,29 @@
+{
+  "name": "ashmal-2026",
+  "version": "1.0.0",
+  "description": "Advanced Task Management System - نظام إدارة المهام المتقدم",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run backend:dev & npm run frontend:dev",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm run dev",
+    "build": "npm run backend:build && npm run frontend:build",
+    "backend:build": "cd backend && npm run build",
+    "frontend:build": "cd frontend && npm run build",
+    "test": "cd backend && npm test",
+    "lint": "cd backend && npm run lint && cd ../frontend && npm run lint"
+  },
+  "keywords": [
+    "task-management",
+    "project-management",
+    "collaboration",
+    "real-time",
+    "arabic"
+  ],
+  "author": "Mahmoud Fadl",
+  "license": "MIT",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
