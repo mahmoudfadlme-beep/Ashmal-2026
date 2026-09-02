@@ -1,0 +1,39 @@
+{
+  "kpiDefinitions": [
+    {
+      "id": "kd_quality",
+      "name_ar": "جودة العمل",
+      "name_en": "Work Quality",
+      "desc_ar": "مدى دقة وجودة تنفيذ المهمة",
+      "desc_en": "Accuracy and quality of task execution"
+    },
+    {
+      "id": "kd_time",
+      "name_ar": "الالتزام بالوقت",
+      "name_en": "Time Commitment",
+      "desc_ar": "الالتزام بالمواعيد المحددة للمهمة",
+      "desc_en": "Adherence to task deadlines"
+    },
+    {
+      "id": "kd_comm",
+      "name_ar": "التواصل والتنسيق",
+      "name_en": "Communication",
+      "desc_ar": "مستوى التواصل والتنسيق مع الفريق",
+      "desc_en": "Communication and coordination with the team"
+    },
+    {
+      "id": "kd_initiative",
+      "name_ar": "المبادرة والاستقلالية",
+      "name_en": "Initiative",
+      "desc_ar": "المبادرة في حل المشاكل دون الحاجة لتوجيه مستمر",
+      "desc_en": "Initiative in solving problems independently"
+    },
+    {
+      "id": "kd_productivity",
+      "name_ar": "الإنتاجية",
+      "name_en": "Productivity",
+      "desc_ar": "حجم العمل المنجز مقارنة بالوقت المستغرق",
+      "desc_en": "Volume of work completed relative to time spent"
+    }
+  ]
+}
